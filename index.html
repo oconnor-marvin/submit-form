@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierra Submit Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-logo-container">
+        <div class="name-logo-container">
+          <img src="./img/leaf_logo.png" alt="Logo of a green leaf" />
+          <h1>tierra</h1>
+        </div>
+        <h6>
+          Photo Credits to
+          <a href="https://unsplash.com/@yan_slg" class="link-credit"
+            >Boudhayan Bardhan</a
+          >
+        </h6>
+      </div>
+      <div class="sign-up-container">
+        <div class="information-text">
+          <h2>Welcome to tierra</h2>
+          <h4>Who are we?</h4>
+          <p>
+            We are not a real website. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Doloremque praesentium ullam veritatis distinctio
+            perspiciatis voluptatem eveniet voluptates possimus consectetur,
+            architecto rem nostrum animi itaque accusamus nobis magnam delectus
+            ea illo vero reiciendis! Magni iure incidunt porro esse cum. Eius,
+            recusandae?
+          </p>
+        </div>
+        <div class="form-bottom-container">
+          <h4>Let's get started</h4>
+          <form action="#" method="post">
+            <fieldset class="details">
+              <div class="input">
+                <label for="first-name">first name</label>
+                <input type="text" name="first-name" id="first-name" required />
+                <span class="no-error" aria-live="polite" id=""></span>
+              </div>
+              <div class="input">
+                <label for="last-name">last name</label>
+                <input type="text" name="last-name" id="last-name" required />
+                <span class="no-error" aria-live="polite" id=""></span>
+              </div>
+              <div class="input">
+                <label for="email">email address</label>
+                <input type="email" name="email" id="email" required />
+                <span
+                  class="no-error"
+                  aria-live="polite"
+                  id="emailError"
+                ></span>
+              </div>
+              <div class="input">
+                <label for="phone-number">phone number</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  required
+                  pattern="[0-9]{8,14}"
+                />
+                <span
+                  class="no-error"
+                  aria-live="polite"
+                  id="phoneError"
+                ></span>
+              </div>
+              <div class="input">
+                <label for="password">password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="8"
+                  required
+                />
+                <span
+                  class="no-error"
+                  aria-live="polite"
+                  id="passwordError"
+                ></span>
+              </div>
+              <div class="input">
+                <label for="confirm-password">confirm password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  minlength="8"
+                  required
+                />
+                <span
+                  class="no-error"
+                  aria-live="polite"
+                  id="confirmError"
+                ></span>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn">create account</button>
+          </form>
+          <h5>
+            Already have an account?
+            <a href="#" class="link-existing">sign in</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <ul class="page-links">
+        <li><a href="#" class="footer-link">Careers</a></li>
+        <li><a href="#" class="footer-link">About us</a></li>
+        <li><a href="#" class="footer-link">Contact us</a></li>
+        <li><a href="#" class="footer-link">Blog</a></li>
+        <li><a href="#" class="footer-link">Help</a></li>
+        <li><a href="#" class="footer-link">Legal</a></li>
+      </ul>
+      <ul class="social-media-links">
+        <li>
+          <a href="#"><i class="brand fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="brand fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="brand fa-brands fa-tiktok"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="brand fa-brands fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="brand fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="brand fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <h5>
+          Copyright Jacob Marvin 2022 <i class="fa-solid fa-copyright"></i>
+        </h5>
+      </div>
+    </div>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        preferredCountries: ["gb", "us", "ca", "au", "nz"],
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

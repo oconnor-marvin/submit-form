@@ -1,0 +1,261 @@
+/*font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif;*/
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.name-logo-container {
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30%;
+  color: #464e2e;
+  background-color: rgba(233, 229, 214, 0.4);
+}
+
+.image-logo-container {
+  width: 40vw;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1556648011-e01aca870a81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.name-logo-container img {
+  width: 30px;
+}
+
+.image-logo-container h6 {
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+.link-credit {
+  text-decoration: none;
+  color: white;
+}
+
+.link-credit:hover {
+  color: #acb992;
+  transition: 0.4s;
+}
+
+.sign-up-container {
+  width: 60vw;
+  height: 100vh;
+  background-color: #a3a84716;
+}
+
+.information-text {
+  background-color: #eae2b63d;
+  margin: 10px;
+  color: #464e2e;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.information-text h2 {
+  color: #464e2e;
+  font-family: "Libre Baskerville", serif;
+}
+
+.information-text p {
+  color: black;
+}
+
+.details {
+  display: flex;
+  flex-flow: row wrap;
+  width: 96.5%;
+  gap: 15px;
+  background-color: #eae2b63d;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  height: 18rem;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 5px;
+  width: 40%;
+}
+
+.input input {
+  background-color: whitesmoke;
+  border: 2px solid #464e2e;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input input:focus {
+  outline: none;
+  border: 2.3px solid #acb992;
+}
+
+#phone {
+  width: 100%;
+}
+
+.error {
+  background-color: rgba(221, 60, 60, 0.511);
+  border: 2px solid rgb(101, 24, 24);
+  font-size: 0.9rem;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.no-error {
+  visibility: hidden;
+}
+
+.form-bottom-container h4 {
+  margin-left: 20px;
+}
+
+.form-bottom-container h5 {
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.link-existing {
+  text-decoration: none;
+  color: rgb(0, 145, 0);
+}
+
+.link-existing:hover {
+  text-decoration: underline;
+}
+
+.link-existing:active {
+  color: chartreuse;
+}
+
+.btn {
+  border-radius: 2px;
+  margin-left: 20px;
+  background-color: #acb99276;
+  border: 2px solid #464e2e;
+  margin-top: 20px;
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #acb992;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+  color: white;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.brand {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+/*954*/
+
+@media all and (max-width: 1100px) {
+  .details {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 954px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .name-logo-container {
+    width: 100%;
+  }
+
+  .image-logo-container {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .sign-up-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .details {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .social-media-links {
+    align-items: center;
+  }
+
+  .name-logo-container {
+    margin-top: 100px;
+  }
+}
+
+@media all and (max-width: 408px) {
+  #phone {
+    width: 135%;
+  }
+}
